@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: palevioletred;
+            color: pink;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: purple;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .project {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .project h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+        <nav>
+            <ul>
+                <li><a href="portfolio.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>A student advisor</h3>
+            <p>This website helps students pick the most relevant clubs,<br> short courses and side hustles based on their course.</p>
+            <p><a href="https://github.com/MartNat/student_advisor">Link to Project 1</a></p>
+        </div>
+        <div class="project">
+            <h3>Fruit firm</h3>
+            <p>Website for fruit farmers to reach their customers easily.</p>
+            <p><a href="https://github.com/MartNat/website">Link to Project 2</a></p>
+        </div>
+        <div class="project">
+            <h3>Trip planner</h3>
+            <p>A website to help you plan your trips</p>
+            <p><a href="https://github.com/MartNat/tripplanner">Link to Project 3</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Martina's Portfolio</p>
+    </footer>
+</body>
+</html>
