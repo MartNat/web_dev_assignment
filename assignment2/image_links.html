@@ -23,7 +23,20 @@
         h1 {
             margin: 0;
             text-align: center; /* Center align the h1 */
-        }
+            color: #66FCF1;
+            font-family: "Lobster", sans-serif ;
+            font-weight: 400;
+            font-style: normal; 
+            font-size: 60px;   
+        }            
+        h2{
+              font-family: "Signika Negative", sans-serif;
+              font-optical-sizing: auto;
+              font-weight: 700;
+              font-style: normal;
+              text-align: center;
+              font-size: 40px;
+         }
         nav {
             text-align: left; 
         }
@@ -54,12 +67,64 @@
             width: 50px; /* Adjust the size of the logo */
             height: 50px; /* Adjust the size of the logo */
         }
-        hr {
-            border: none;
-            border-top: 1px solid #ccc; /* Changed the color of the line */
-            margin: 20px 0; /* Added margin for better spacing */
+        #home p{
+            font-size: 18px;
+            text-align: center;
+        }
+        /*style for the technology section */
+        #technology {
+            text-align: center; /* Center align the technology section */
+        }
+        #technology p{
+            font-size: 18px;
+            text-align: center;
+        }
+        /* Style for the Gallery section */
+        #gallery {
+            text-align: center; /* Center align the gallery section */
+        }
+        #gallery div {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Create a grid layout with minimum column width of 200px */
+            gap: 20px; /* Add gap between grid items */
+            margin-top: 20px; /* Add margin to separate from heading */
+        }
+        #gallery div a {
+            display: block; /* Make images occupy full width of grid cell */
+            text-decoration: none;
+        }
+        #gallery div a img {
+            width: 100%; /* Make images occupy full width of grid cell */
+            height: 200px; /* Fixed height for uniform size */
+            object-fit: cover; /* Maintain aspect ratio and fill the container */
+            border-radius: 10px; /* Optional: Add border radius for rounded corners */
+        }
+        #menu {
+            text-align: center; /* Center align the gallery section */
+        }
+        #menu ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Create a grid layout with minimum column width of 200px */
+            gap: 20px; /* Add gap between grid items */
+            margin-top: 20px; /* Add margin to separate from heading */
+        }
+        #menu ul li a {
+            display: block; /* Make images occupy full width of grid cell */
+            text-decoration: none;
+        }
+        #menu ul li a img {
+            width: 100%; /* Make images occupy full width of grid cell */
+            height: 200px; /* Fixed height for uniform size */
+            object-fit: cover; /* Maintain aspect ratio and fill the container */
+            border-radius: 10px; /* Optional: Add border radius for rounded corners */
         }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -77,27 +142,34 @@
         <h1><strong>Welcome to my website</strong></h1>
         
         <section id="home">
-            <h2>Home</h2>
-            <p>Welcome to our website! We are excited to showcase some amazing images.</p>
-            <a href="https://example.com/technology"><img src="technology_image.jpg" alt="Technology"></a>
+            <h2><strong>Home</strong></h2>
+            <p>Welcome to our captivating world of mesmerizing images! Get ready to embark on an unforgettable journey filled with breathtaking landscapes, enchanting wildlife, and awe-inspiring moments captured from around the globe. Whether you're an explorer of the great outdoors, a tech enthusiast eager to discover the latest innovations, or a culinary connoisseur with a passion for exquisite flavors, our curated collection of images has something special for you. Immerse yourself in the pristine beauty of nature, where towering mountains, lush forests, and serene lakes await your discovery. Journey into the realm of technology and marvel at the cutting-edge advancements reshaping our world, from futuristic gadgets to groundbreaking inventions. Indulge your senses with tantalizing images of delectable dishes and culinary creations that will tempt your taste buds and ignite your culinary imagination. Join us as we celebrate the extraordinary beauty and diversity of our world through the lens of photography. Sit back, relax, and enjoy the visual feast that awaits you!</p>
+
+        </section>
+        <section id="technology"> 
+            <h2>Technology</h2>   
+            <p>Let's dive into Technology and understand more about cloud computing</p>
+            <div>
+            <a href="https://www.pluralsight.com/blog/cloud/cloud-computing-public-sector"><img src="https://www.pluralsight.com/content/dam/ps/images/resource-center/blog/misc-graphics/public-sector-cloud-whitepaper-blog-ad.webp" alt="Technology"></a>
+            </div>
         </section>
         
         <section id="gallery">
             <h2>Gallery</h2>
             <div>
-                <a href="https://example.com/nature"><img src="nature_image1.jpg" alt="Nature 1"></a>
-                <a href="https://example.com/nature"><img src="nature_image2.jpg" alt="Nature 2"></a>
-                <a href="https://example.com/nature"><img src="nature_image3.jpg" alt="Nature 3"></a>
+                <a href="https://www.pexels.com/photo/photo-of-stream-during-daytime-3225517/"><img src="https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Nature 1"></a>
+                <a href="https://www.pexels.com/photo/mountain-under-starry-sky-1624504/"><img src="https://images.pexels.com/photos/1624504/pexels-photo-1624504.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Nature 2"></a>
+                <a href="https://www.pexels.com/photo/brown-monkey-321552/"><img src="https://images.pexels.com/photos/321552/pexels-photo-321552.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Nature 3"></a>
             </div>
-            <hr> <!-- Line separating the Gallery section from the Menu section -->
+            
         </section>
         
         <section id="menu">
             <h2>Menu</h2>
             <ul>
-                <li><a href="https://example.com/food1"><img src="food1_image.jpg" alt="Food 1"></a> Food Item 1</li>
-                <li><a href="https://example.com/food2"><img src="food2_image.jpg" alt="Food 2"></a> Food Item 2</li>
-                <li><a href="https://example.com/food3"><img src="food3_image.jpg" alt="Food 3"></a> Food Item 3</li>
+                <li><a href="https://www.pexels.com/photo/closes-up-photo-of-macaroni-1437267/"><img src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pasta"></a> Pasta</li>
+                <li><a href="https://www.pexels.com/photo/grilled-meat-410648/"><img src="https://images.pexels.com/photos/410648/pexels-photo-410648.jpeg?auto=compress&cs=tinysrgb&w=600" alt="meat"></a> Meat</li>
+                <li><a href="https://www.pexels.com/photo/cooked-rice-on-white-ceramic-plate-3926133/"><img src="https://images.pexels.com/photos/3926133/pexels-photo-3926133.jpeg?auto=compress&cs=tinysrgb&w=600" alt="rice"></a> Fried rice</li>
             </ul>
         </section>
     </main>
