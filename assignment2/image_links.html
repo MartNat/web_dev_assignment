@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #c5c6c7;
+            margin: 0;
+            padding: 0;
+            background-image: url(home_background.jpg);
+        }
+        header {
+            background-color: #000; /* Changed background color to black */
+            color: #fff; /* Changed text color to white */
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h1 {
+            margin: 0;
+            text-align: center; /* Center align the h1 */
+        }
+        nav {
+            text-align: left; 
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #66FCF1;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #45A29E;
+        }
+        img.logo {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%; /* Make the image round */
+            width: 50px; /* Adjust the size of the logo */
+            height: 50px; /* Adjust the size of the logo */
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #ccc; /* Changed the color of the line */
+            margin: 20px 0; /* Added margin for better spacing */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNiKVg60khmbuUO7lN4YrAiAZVww3lYsjsgw&usqp=CAU" alt="Logo" class="logo"> <!-- Add your logo here with class="logo" -->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1><strong>Welcome to my website</strong></h1>
+        
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to our website! We are excited to showcase some amazing images.</p>
+            <a href="https://example.com/technology"><img src="technology_image.jpg" alt="Technology"></a>
+        </section>
+        
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div>
+                <a href="https://example.com/nature"><img src="nature_image1.jpg" alt="Nature 1"></a>
+                <a href="https://example.com/nature"><img src="nature_image2.jpg" alt="Nature 2"></a>
+                <a href="https://example.com/nature"><img src="nature_image3.jpg" alt="Nature 3"></a>
+            </div>
+            <hr> <!-- Line separating the Gallery section from the Menu section -->
+        </section>
+        
+        <section id="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="https://example.com/food1"><img src="food1_image.jpg" alt="Food 1"></a> Food Item 1</li>
+                <li><a href="https://example.com/food2"><img src="food2_image.jpg" alt="Food 2"></a> Food Item 2</li>
+                <li><a href="https://example.com/food3"><img src="food3_image.jpg" alt="Food 3"></a> Food Item 3</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
